@@ -1,0 +1,8 @@
+@charset "utf-8";
+.Price, #Footer a:hover, a, a:visited a:link, #CatHeader .CheatLinks a:hover, #placeHolderPadding .CodeSearchListAltRow a:hover,#placeHolderPadding .CodeSearchListRow a:hover,h2, h3, h4, h5,.consoleTextColour 
+{ color:#FFC411; text-decoration:none; } 
+#Header .SubNavWrapper a:hover  {  background:url(../images/main.png) 0px -315px repeat-x #FFC411;}
+#Header { background:url("../images/ds_bar.png") repeat-x; border-top: 2px solid #FFC411;   }
+/*.BackgroundImage {  background: url(../images/index/backgrounds/ds.jpg)  no-repeat scroll center 0;} */
+
+

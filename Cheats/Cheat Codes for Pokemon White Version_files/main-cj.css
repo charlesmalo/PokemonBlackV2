@@ -1,0 +1,893 @@
+@charset "UTF-8";
+/* 
+	Codejunkies
+	by Neil Ratcliffe and Stephen grice
+	Datel Design 2011
+
+	Version 1.3
+*/
+
+/* Resetting Browser-Set Defaults */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+}
+
+/* Default Body Styles */
+body {  background:#fff; font-family:Lucida Sans Unicode,Lucida Grande,LucidaGrande,Lucida Sans,Geneva,Arial,sans-serif; color: #333; font-size: 12px;}
+.hidden { display:none; }
+.clear { clear:both;}
+a { text-decoration:none; color:#f80000; }
+a:hover { color:#000;  }
+p { padding:5px 0; }
+.Spacer { height:150px; }
+
+
+/* Container - Centered */
+#Container { position: relative; padding:0; }
+#ContainerTop { position: relative; padding:25px 0 25px 0;  }
+#ContainerWhite { position: relative; padding:25px 0 25px 0; color:#000000;  }
+#ContainerBlack { position: relative; padding:25px 0 25px 0; background:#000; color:#FFF;  }
+#ContainerGrey { position: relative; padding:25px 0 25px 0; background: url("images/bg.png") repeat scroll 0 0 #000000; color:#fff; }
+
+
+.centerTop {background:#000;margin:0 auto -75px auto;padding:20px;width:960px; position:relative; overflow:visible; top:200px; z-index:1000;
+-moz-border-radius-topleft:15px; -moz-border-radius-topright:15px; }
+.centerBlack { margin:0 auto -75px auto;padding:20px;width:960px; position:relative; overflow:visible;}
+.center { margin: 0px auto; width: 960px;  }
+
+/* Index Bottom */
+.Col3 {float:left; Margin:20px 0 10px 0;width:288px; border-left:#000000 solid 1px; border-right:#6b6b6b solid 1px; padding:0 20px; min-height:370px;}
+.Col3 h3 { padding:10px 0 10px 0;}
+.Col3Left { padding:0 20px 0 0; border-right:#6b6b6b solid 1px; border-left:none;}
+.Col3Right {  padding:0px 0 0px 20px; border-left:#000000 solid 1px; border-right:none; }
+.Col3Right p { font-size:11px; }
+.Col190 { width:190px; float:left; }
+.Col770 { width:770px; float:left; }
+
+h1, h2, h3, h4 { padding:15px 0 5px; margin:0; }
+h1 { font-size:32px; }
+h2 { font-size:26px; }
+h3 { font-size:20px; }
+h4 {font-size:16px;  }
+
+/* Header Nav */
+#Header { height:158px; background:url(images/cj_bar.png) 0 0px repeat-x; border-top: 2px solid #000;}
+#Header .CatNav li {  float:right;  }
+#Header ul.CatNav {  list-style:none; float:right; width:630px; }
+#Header .CatNav a {  display:inline-block; text-decoration:none; color:#FFFFFF; letter-spacing:-0.5px; font-size:16px; padding:70px 0 0 0; line-height:0; background:url(images/main.png) 0 15px repeat-x; height:0px; width:65px; text-align:center; height:20px;}
+#Header .CatNav a.PSP { background:url(images/main.png) 0px 15px repeat-x; }
+#Header .CatNav a.PSP:hover { background:url(images/main.png) 0px -83px repeat-x; }
+#Header .CatNav a.DS { background:url(images/main.png) 194px 15px repeat-x; }
+#Header .CatNav a.DS:hover { background:url(images/main.png) 194px -83px repeat-x; }
+#Header .CatNav a.PS2 { background:url(images/main.png) 582px 15px repeat-x; }
+#Header .CatNav a.PS2:hover { background:url(images/main.png) 582px -83px repeat-x; }
+#Header .CatNav a.PS3 { background:url(images/main.png) 506px 15px repeat-x; }
+#Header .CatNav a.PS3:hover { background:url(images/main.png) 506px -83px repeat-x; }
+#Header .CatNav a.GCN { background:url(images/main.png) 428px 15px repeat-x; }
+#Header .CatNav a.GCN:hover { background:url(images/main.png) 428px -83px repeat-x; }
+#Header .CatNav a.Xbox { background:url(images/main.png) 349px 15px repeat-x; }
+#Header .CatNav a.Xbox:hover { background:url(images/main.png) 349px -83px repeat-x; }
+#Header .CatNav a.Xbox360 { background:url(images/main.png) 272px 15px repeat-x; }
+#Header .CatNav a.Xbox360:hover { background:url(images/main.png) 272px -83px repeat-x; }
+#Header .CatNav a.Wii { background:url(images/main.png) 119px 15px repeat-x; }
+#Header .CatNav a.Wii:hover { background:url(images/main.png) 119px -83px repeat-x; }
+#Header .CatNav a.Gadgets { background:url(images/main.png) 56px 15px repeat-x; }
+#Header .CatNav a.Gadgets:hover { background:url(images/main.png) 56px -83px repeat-x; }
+#Header .CatNav a:hover { color:#000000;}
+#Header h1.CjLogoEuro { float:left; padding:0; text-indent:-99999px; background:url(images/main.png) -9px -361px repeat-x; width:300px; height:65px; margin:20px 0 0 0; }
+#Header ul.SubNav { list-style:none; float:left; }
+#Header .SubNavWrapper { float:left; width:930px; padding:18px 0; } 
+#Header .SubNav li  { display:inline; }
+#Header .ShopCart { float:right; }
+#Header .SubNavWrapper a, a.button, a#blogReadMore { color:#FFFFFF; text-decoration:none; padding:2px 10px; font-size:14px; background:url(images/main.png) 0px -315px repeat-x  #5A5A5A;
+-moz-border-radius: 15px; -webkit-border-radius: 15px; -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5); }
+#Header .SubNavWrapper a:hover, a.button:hover {  background:url(images/main.png) 0px -315px repeat-x #b40000;}
+a#blogReadMore { float:right; margin:5px 0; }
+a#blogReadMore:hover { background:url(images/main.png) 0px -315px repeat-x #b40000;}
+
+/* Mulit Hero */ 
+.Shadow { background:url(images/main.png) 0px -274px repeat-x; height:30px; position:absolute; width:100%; z-index:25; }
+#HeroInfo { position:relative; height:250px; }
+#ScrollerHeader { height:250px;  overflow:hidden; left:0; width:100%; z-index:1; position:absolute; top:160px; }
+#ScrollerHeader .inner { margin:0 auto; position:relative; height:1000px;}
+#ScrollerHeader .slides { width:100%; height:800px; background-position: 50% 0; cursor:pointer; background-repeat:no-repeat;  }
+.centerHero p { width:300px; font-size:16px;  }
+.centerHero {  margin: 45px auto 0 auto; width: 950px;}
+.centerHero h2 { padding:0; }
+.BlackBg { background:#2d2d2d; color:#fff; padding:4px 10px ; }
+.WhiteBg { background:#fff; color:#2d2d2d; padding:4px 10px; }
+#ScrollerNext { }
+#ScrollerPrev { }
+#ScrollerNav { }
+
+ /* Colours */
+ h1.black , h2.black, h3.black, h4.black, h5.black, p.black, ul.black { color:#333333 }
+ .red { color:#ff0000; }
+.clsCommentsAuthor{font-size:small;	color:White;}
+
+/* Blog Post */
+.BlogCenter { float:left;padding:0 10px 0 0;width:720px; } 
+td.postFooter  { border-top:2px solid #2D2D2D;padding:0; }
+.post { padding: 0 0 20px 0;}
+.post img{ float:left;padding:0 15px 15px 0; } 
+.post h2 { background:#e7e7e7;margin:0 0 8px;padding:10px 15px 8px; border-top:1px solid #e7e7e7; }
+.post h4, .post h3 { padding: 0 0 5px 0; } 
+.post p { padding:5px 0 0 0; font-size:12px; }
+.postdate { }
+.BlogPage a { color:#f00000;  }
+.BlogPage h4.button a { color:#FFFFFF; text-decoration:none; padding:2px 10px; font-size:14px; background:url(images/main.png) 0px -315px repeat-x  #5A5A5A;
+-moz-border-radius: 15px; -webkit-border-radius: 15px; -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.5); float:right; margin:10px 0 0;}
+.BlogPage a:hover {color:#ba0000;text-decoration:underline;}
+.BlogPage .postDate { font-size:16px; float:right; } 
+.BlogPage  .sidebarText a { letter-spacing:-0.2px; padding:5px 10px; float:left; min-height:20px; width:181px; font-size:11px; border-top:1px solid #161616;border-left:3px solid #555555;border-bottom:1px solid #2D2D2D; }
+.BlogPage  .sidebarText a:hover { border-left:3px solid #F00000; color:#000; text-decoration:none;background:#e7e7e7; padding:5px 8px 5px 12px; }
+.BlogPage  .sidebarHeading  h3 { background:#e7e7e7;border-left:3px solid #555555;border-top:1px solid #555555;float:left;margin:20px 0 0;padding:5px 0 0 11px;width:190px;}
+h4.Blog { position:absolute; padding:10px 0 0 5px; } 
+
+/* New Shopping Cart page 2010  */
+#carttitlePage { float:left; width:900px; padding:10px 10px 0;}
+#carttitlePage .red { color:#FF0000; }
+#carttitlePage .cartsubtitle { float:left; padding:19px 0 0 12px;   } 
+#carttitlePage h1 { font-size:220%; }
+#carttitlePage h3 { padding:3px 0 0; font-size:130%; }
+#cartPage{ float:left; width:960px; padding:0;  } 
+#cartPage .cartitemimage img { padding:3px 20px 5px 10px; }
+#cartPage .cartitemimage { float:left; padding:0 0 4px;position:relative; } 
+#cartPage .cartsku, a .cartsku { float:left; color:#FFFFFF; font-size:90%; padding:26px 0px 4px 0px;} 
+
+#cartPage .cartproductname { float:left; clear:both; font-size:110%; } 
+#cartPage .cartitemdescription { float:left;  }
+#cartPage .productcolumn td, .productcolumn { border-bottom:#1a1a1a 1px solid; vertical-align:middle; } 
+#cartPage th  { border-bottom:#FF0000 1px solid; font-size:130%;  padding: 0 8px 6px; } 
+#largecartfooter { float:left; width:960px; padding:0; }
+#largecartfooter .cartupdates { padding:14px 0 0 0; }
+#largecartfooter .cartupdates input {     margin: -8px 0; position: absolute;}
+#largecartfooter .carttotals { float:right; font-size:180%; padding: 10px 0; }
+#cartactionsPage { float:left; width:960px; padding:28px 0; border-top:2px solid #e7e7e7; } 
+#cartactionsPage .cartactioncontinue  { float:left; font-size:190%; padding:0; }
+#cartactionsPage .cartactioncheckout { float:right; padding:0; width:420px; } 
+#cartactionsPage .or { float:right; padding:23px 27px 23px 19px;}
+#cartactionsPage .PayPalCheckout { float:left; padding:13px 0 0;}
+#cartactionsPage .CjCheckout { float:right; } 
+#cartactionsPage h2 { font-size:190%; padding:0 0 20px; text-align:right;}
+#cartcouponsPage { text-align:right; float:right; width:960px; border-top:2px solid #e7e7e7; }
+#cartcouponsPage .btn input {   margin: 0 0 -5px; padding: 8px 0 0;  }
+
+/* Pager 2010 */
+.pager { float:right; width:960px; }
+.pager ul { list-style-type:none; font-size:90%; padding:0;  margin:0px 9px 0;  }
+.pager li.current a { color:#000; }
+.pager li { float:left; padding:0 6px 2px;background:#ececec; }
+
+
+.AddImages { float:left; border:none; margin:4px 0 0 2px; background:url(images/Buttons/MoreImages.png) no-repeat; margin:-18px 0 0 2px; padding:37px 0 0 0;   } 
+.AddImages img { }
+.AddImages a { padding:0 2px 0 0; }
+#EmailThisPage { }
+#CategoryList{ float:left;  margin:0; padding:0; }
+#CategoryList .recordimage { margin:0 20px 5px 0px; float:left;  }
+#CategoryList a { color:red; text-decoration:none; }
+#CategoryList ul { font-size:80%; display:block; margin:0; padding:0; }
+#CategoryList li { padding-bottom:15px; list-style-type:none; text-align:left; width:440px; float:left; }
+#CategoryList .recordname { display:block; font-size:150%;  float:left;  width:320px; }
+#CategoryList .variantprice { display:block; font-size:120%;  float:left;  width:320px; padding:2px 0;  }
+#CategoryList .Stock { color:#999999; float:left;  width:320px; padding:0 0 4px; } 
+#CategoryList .ShortDes  { font-size:100%; float:left; width:320px; font-size:10px; } 
+#CategoryList .ShortDes p { padding:0; margin:0;  }
+#CategoryList .recordcontrols { display:block; float:left;  width:320px; padding:0 0 5px;  }
+#CategoryList .ListPrice, #CategoryList .ListPrice a { color:#FFFFFF; font-size:100%;  } 
+
+.sidebarAccouncement { margin:15px; width:410px; float:left; }
+.sidebarAccouncement .title { font-size:110%; border-bottom:1px solid #1a1a1a; } 
+.sidebarAccouncement p {font-size:90%;}
+
+#center { float:left; display:inline; width:500px; margin:0; padding:0 0 0 15px; }
+#center .Prices { font-size:200%; font-family:"Myriad Pro",Lucida Sans Unicode,Lucida Grande,LucidaGrande,Lucida Sans,Geneva,Arial,sans-serif; }
+#center .Prices input { margin:0 0 -7px; }
+/*#center .Prices input:hover { margin:0 0 -6px; }*/
+#center .WasPrice { float:left; text-decoration:line-through;  }
+#center .ShortDes { font-size:120%; line-height:24px; font-weight:bold; }
+#center  .FullDes hr { background:#333333; height:1px; border:0; border-bottom:#484848; } 
+#center .StockSaveBar{ padding:3px 0 10px; }
+#center .productSubTitle { border-bottom:1px solid #e7e7e7; clear:both; float:left; font-size:120%; font-weight:normal; margin:10px 0; padding:0 0 6px; width:100%; }
+.IndexBoxheader {font-size:140%;margin-bottom:10px;}
+#indexheader {  width:920px; padding:4px 0 0 0;  }
+#indexheader h1 { font-size:300%; letter-spacing:-2.0px;  } 
+#indexCon {}
+#indexright { background: url("images/bg.png") repeat scroll 0 0 #000000; color:#fff; }
+#indexCon .CheatLinks { display:block;  float:left; background:url(images/Top5Images/Bg_Black_fadder.png) no-repeat; margin:5px 0 0;  padding:5px 0; }
+#indexCon .Top5Cheats { float:left; width:220px; float:left; padding:0px 0 0 10px; } 
+#indexCon .Top5Cheats h2 { padding:7px 0 5px; font-size:170%; } 
+#indexCon .Top5Cheats ul { margin:0px; padding:0 0 10px; float:left; list-style:none; font-size:88%; width:200px; letter-spacing:-0.3px;  }
+#indexCon .Top5Cheats li { margin:0; padding:0; } 
+#indexCon .Top5Cheats li a { color:#FFFFFF; } 
+#indexCon .Top5Cheats li a:hover { color:#CCCCCC; }
+#indexCon .Top5Cheatslinks {  float:left; width:200px; display:none; } 
+#indexCon .Top5Image { float:left; } 
+#indexCon .Top5Header { float:left; padding:5px 0px 5px 0px; } 
+#indexCon h1, #indexCon h3,#indexCon h4,#indexCon h2, #indexCon h5 { padding:0;} 
+#indexCon h4 { font-size:14px;}
+#indexCon .TopProdcts  { display:block; width:920px; float:left; background:url(images/Top5Images/Bg_Black_fadder.png) no-repeat #000000; margin:10px 0;  padding:5px 0;  }
+#indexCon .TopProdcts h5 { font-size:130%; padding:5px 0 10px 15px; }
+
+#indexheader .videoFloat { left:627px; position:absolute; top:166px;}
+#indexheader .ListHeader {   }
+#indexheader .NewCodeBox { left:33px; position:absolute; top:166px; font-size:90%; top:200px; line-height:16px; } 
+#indexheader .UpdateCodeBox { left:281px; position:absolute; top:166px; font-size:90%; top:200px; line-height:16px;  }
+#indexheader .headerInfoOverlay { position:absolute;  }
+#indexheader .headerInfoOverlay h1 { font-size:250%; background:#000; padding:3px; padding:3px 10px 3px 15px; }
+#indexheader .headerInfoOverlay h2 { background:#fff; padding:3px; padding:3px 10px 3px 15px; color:#93cd46; margin:0; clear:both; float:left; font-weight:400; font-size:150%; }
+#indexheader .headerInfoOverlay h3 { background:#fff; padding:3px; padding:3px 10px 3px 15px; color:#000;  margin:0; clear:both; float:left;font-weight:400; letter-spacing:-0.5px; }
+#indexheader .headerInfoOverlay h4 {  color:#000; margin:0; font-weight:400; }
+#indexheader .headerInfoOverlay .features {background:#fff; padding:3px; padding:3px 10px 3px 15px; color:#93cd46; margin:0; clear:both; float:left; font-weight:400; }
+#indexheader .headerInfoOverlay ul { letter-spacing:-0.5px; clear:both; float:left; padding:0; margin:0; list-style-position:inside; }
+#indexheader .headerInfoOverlay li { background:#fff; list-style-type:square; color:Black; clear:both; float:left; font-weight:400;  margin:0; padding:3px 10px 3px 15px; }
+
+
+#indexCon {}
+#indexCon .productgrid { float:left; width:760px; }
+#indexCon .productgridlink  { padding:110px 10px 0 0; position:absolute; text-align:center; width:150px; }
+#indexCon .productgridprice { padding:145px 10px 0 0; position:absolute; text-align:center; width:150px; }
+#indexCon .productgridlink a { color:#FFFFFF;  letter-spacing:-0.8px; }
+#indexCon .productgridlink a:hover { color:#666666; }
+#indexCon .productInfo p {font-size:12px;margin-top:-7px;overflow:auto; text-align:left; margin:0; padding:0;color:#2d2d2d;}
+#indexCon .productInfo p a { color:#2d2d2d;  }
+#indexCon .productgrid ul { padding:0; display:inline;   }
+#indexCon .productInfo {  height:42px;padding:5px 0 0;} 
+
+#indexCon .productText {display:block;overflow:auto; padding:0; width:180px; z-index:1;}
+#indexCon .productText p {font-size:12px;margin-top:-7px;overflow:auto; text-align:left; margin:0; padding:0;/*text-indent:2px !important;*/ }
+#indexCon .productText p span{font-size:11px; text-align:left; margin:0; padding:0; letter-spacing:-0.2px;}
+#indexCon h4.productInfo { padding:3px 0 5px; width:170px; }
+#indexCon h4:hover span { color:#fff; }
+
+#indexCon .blockcontent li { float:left; width:180px; min-height:245px; padding:20px 5px 20px 0; background:url(/Images/products/FrontPage/Awating.jpg) 0px 20px  no-repeat; }
+#indexCon .blockcontent p { padding:3px 0; } 
+#indexCon .blockcontent .productInfo  { background:none; }
+#indexCon .blockcontent p.price  { text-indent:0px; padding:3px 0;  font-size:15px; white-space:nowrap; }
+
+/* Mailing Sign up */
+.mailinglistsignupform { padding:16px 0 0 16px; margin:0px; height:85px;  background:url(images/news_letter.png) no-repeat; } 
+.mailinglistsignupform .Instructions{ float:left;font-size:9px;line-height:18px;padding:11px 0 0; }
+input.EnterMail { border:0 none;margin:12px 0 0 4px; width:128px; }
+span.errormessage { position:absolute; }
+.mailinglistsignupform h4 { font-size:26px; }
+input.GoMail  { margin:0px 0 -6px 1px; }
+.FrontPageConsole img { padding: 0 0 4px 0; }
+
+.multimailinglistsignupform { padding:16px 0 0 16px; margin:0px; background:url(images/multinewsletter.png) no-repeat;height:300px; } 
+.multimailinglistsignupform .Instructions{ float:left;font-size:9px;line-height:18px;padding:11px 0 0; }
+.multimailinglistsignupformLnk  a,multimailinglistsignupformLnk:hover,.multimailinglistsignupformLnk:visited{ text-decoration:underline; color:#333;}
+
+/* New Arrivals Front Page Block */
+#indexCon  .newArrivalgrid, #indexCon  .mailinglistsignupform { width:190px; float:left;  }
+#indexCon  .newArrivalgrid, #indexCon  .multimailinglistsignupform { width:190px; float:left;  }
+#indexCon  .newArrivalgrid  li { background:url(images/NA_bg.png);min-height:70px;padding:5px 0 5px 11px;width:179px; }
+#indexCon  .newArrivalgrid ul  { list-style:none; float:left; padding:0 0 10px 0; background:url(images/NA_bg_bottom.png) repeat center bottom; } 
+#indexCon  .newArrivalgrid h3 { background:url("images/NA_bg_top.png") repeat scroll 0 0 transparent;float:left;font-size:24px;height:26px;padding:23px 47px 10px 10px;width:144px; }
+#indexCon .newArrivalgrid p.price { position:absolute; font-size:12px;padding:20px 0 0 7px; letter-spacing:-0.6px;color:#000;   }
+#indexCon  .newArrivalgrid h4  { position:absolute; padding:2px 0 0 8px;  color:#000; }
+#indexCon  .newArrivalgrid img.lastproductsviewed { float:left; padding:6px 0 0 106px;}
+#indexCon .newArrivalgrid p.Details {position:absolute; padding:40px 0 0 7px; color:#000;  } 
+#indexCon .newArrivalgrid p.Details:hover { color:#2d2d2d; }
+
+
+
+/* Top Codes Block */
+.TopCodesBlock {} 
+.TopCodesBlock li { border-bottom:solid 1px #8c8c8c; border-left:3px solid #2D2D2D; padding:4px 0px 4px 5px;} 
+.TopCodesBlock li a { line-height:9px; }
+.TopCodesBlock li a:hover { text-decoration:underline; }
+.TopCodesBlock ul { list-style:none; font-size:11px;} 
+.TopCodesBlock .console  { font-size:10px; }
+
+/* Product Crousel */
+.infiniteCarousel { width: 395px;position: relative; top:30px;}
+.infiniteCarousel .wrapper { width: 315px;overflow: auto; min-height: 19em; margin: 0 40px; position: absolute; top: 0; width:376px;}
+.infiniteCarousel ul a img { border: 5px solid #000;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.infiniteCarousel .wrapper ul {width: 9999px; list-style-image:none; list-style-position:outside; list-style-type:none;  margin:0; padding:0;  position: absolute;  top: 0;  }
+.infiniteCarousel ul li {  display:block;  float:left;  padding: 10px;  height: 85px;  width: 85px;}.infiniteCarousel ul li a img { display:block;}
+.infiniteCarousel .arrow { display: block; height: 36px; width: 37px; background: url("Images/buttons/carousel_arrows.png") no-repeat 0 0;text-indent: -9999px;position: absolute;top: 37px;cursor: pointer;}
+.infiniteCarousel .forward {background-position: -25px 5px;right:  -69px;}
+.infiniteCarousel .back { background-position: 11px 5px;left: 0;}
+
+
+.FPinfiniteCarousel {width:400px; float:left;}
+.FPinfiniteCarousel .wrapper { overflow: auto; min-height:400px; margin: 0 40px; position: absolute; width:670px;}
+.FPinfiniteCarousel ul a img{ border: 5px solid #fff;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.FPinfiniteCarousel ul a img:hover { border: 5px solid #d5d5d5;-moz-border-radius: 5px; -webkit-border-radius: 5px;}
+.FPinfiniteCarousel .wrapper ul {width: 9999px; list-style-image:none; list-style-position:outside; list-style-type:none;  margin:0; padding:0;  position: absolute;   }
+.FPinfiniteCarousel ul li {  display:block;  float:left;  height: 88px; text-align:center;   width:112px;}
+.infiniteCarousel ul li a img { display:block;}
+.FPinfiniteCarousel .arrow { display: block; height: 36px; width: 37px; background: url(Images/buttons/carousel_arrows.png) no-repeat 0 0; text-indent: -9999px; position: absolute; cursor: pointer;}
+.FPinfiniteCarousel .forward {background-position: -25px 5px;margin:60px 0 0 730px;position:absolute;}
+.FPinfiniteCarousel .back { background-position: 11px 5px; margin:60px 0 0 0px;position:absolute;}
+#indexCon  .FPinfiniteCarousel p.price { color:#000; text-align:center; }
+.FPinfiniteCarousel h4 { text-align:center; }
+
+/* Carousel */
+#CrossSellCarousel { height:400px; float:left;  display:inline; margin:0; padding:10px 0 10px 0; border-top:1px solid #e7e7e7; margin:10px 0; width:460px;  }
+#CrossSellCarousel h3 { color:#FFFFFF; font-size:150%; }
+#CrossSellCarousel  ul { font-size:80%; display:block; margin:0 0 0 10px; padding:0; }
+#CrossSellCarousel  li { padding-bottom:10px; list-style-type:none; text-align:left; width:112px;float:left;display:inline; height:250px; margin:0px; }
+#CrossSellCarousel  .recordname { display:block; float:left; width:100px; min-height:45px; }
+#CrossSellCarousel  .variantprice { display:block; float:left; margin-bottom:4px; width:100px; }
+#CrossSellCarousel  .recordcontrols { display:block; float:left; width:100px; }
+#CrossSellCarousel  .recordimage { float:left; margin:9px 0 5px 0;}
+
+
+#ProductCategoryWebDescription {text-align:justify;padding:0 10px;}
+.RelatedProductsBoxStyle {font-size:90%;text-align:left;}
+
+#headerspacer {width:920px;left:30px;float:left;margin-top:15px;height:150px;}
+#flashheader {left:15px;margin-top:0;position:absolute;z-index:9;}
+ 
+#categoryWebDescription {width:500px;position:absolute;left:30px;margin-top:4px;font-size:90%;height:140px;z-index:10;}
+#categoryWebDescription h3 { font-size:14px; }
+
+/* Product Carousel End */
+.BackgroundImage { width:100%; height:1000px; z-index:-1;  position:fixed; left:0; top:0px; } 
+.Price {font-size:110%;font-weight:bold;display:block;float:left;padding-right:100px;}
+#CatPageRight h1, .CatCodeSearch h1 {font-size:180%; float:left;display:block; text-align:left;margin: 0px;padding: 10px 0; font-weight:normal;}
+
+
+/* New Catergories 2010 - Codejunkies V2  */ 
+#CategoryGrid li { width:220px; float:left; padding:10px; min-height:310px; }
+#CategoryGrid ul { list-style:none; }
+#CategoryGrid p { font-size:11px; color:#414141; padding:0; }
+#CategoryGrid h4 { padding:10px 0 0 0; }
+
+/* Home Page Product Grid */
+#HomePageFeatures { float:left; padding:20px 10px 20px 20px; background:url(images/FP_bg.png) no-repeat;  }
+
+/* Product Bar */
+#HomePageFeatures .ProductBar,  #CategoryGrid .ProductBar { font-size:11px; background:none repeat scroll 0 0 #2D2D2D;height:32px;position:absolute; }
+#HomePageFeatures .ProductBar {margin:0;padding:0 0 0 0;width:160px;}
+#CategoryGrid .ProductBar  {margin:107px 0 0 45px;padding:0 0 0 0;width:160px; }
+#HomePageFeatures .recordcontrols { position:absolute; padding:0px 0 0 96px; }
+#CategoryGrid .recordcontrols { position:absolute; padding:0px 0 0 96px; }
+#HomePageFeatures .variantprice,   #CategoryGrid .variantprice { position:absolute; padding:7px 0 0 48px; color:#fff; }
+#HomePageFeatures .PLink,  #CategoryGrid .PLink { position:absolute; margin:6px 0 0 6px;padding:2px 5px; background:#fff; z-index:60; text-decoration:underline;  }
+#HomePageFeatures .ProductBar a,  #CategoryGrid .ProductBar a { color:#fff; }
+#HomePageFeatures .PLink a,  #CategoryGrid .PLink a { color:#2d2d2d; text-decoration:underline;  }
+#HomePageFeatures .PLink a:hover,  #CategoryGrid .PLink a:hover { color:#b2b2b2; text-decoration:underline;  }
+#HomePageFeatures .PLink, #HomePageFeatures .ProductBar,  #CategoryGrid .PLink, #CategoryGrid .ProductBar  { -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+
+.ProductReviews {}
+.ProductReviewRating {display:block;margin-bottom:5px;margin-top:5px;vertical-align:text-top;}
+.ProductReview {display:block;margin-bottom:10px;font-size:90%;margin-left:5px;}
+.ProductReviewLinks { background:url(Images/buttons/Write_review_icon.png)no-repeat 125px 8px; color:#ffffff; font-size:120%; padding:11px 0 0; }
+.ProductReviewLinks  a:hover,.ProductReviewLinks  a { cursor:pointer; }
+.top { border-bottom:1px solid #d3d3d3;text-align:left; font-size:120%;margin-bottom:10px;padding:15px 0 5px;}
+.averageRating {  margin-left:5px; padding-bottom:5px;width:250px;}
+#left .top {width:210px;height:16px;float:left;padding:10px;font-size:120%;}
+.productgrid ul { float:left; margin:0; padding:0 0 0 10px; list-style:none;  }
+.productgrid li { padding:3px 0; font-size:90%;}
+#productsection {float:left;width:960px;margin:0;padding:0;}
+.productname h1 { padding:0 0 10px; }
+.Stock { color:#CCCCCC; font-size:90%;}
+
+#left {text-align:left;float:left;width:230px;display:block;}
+
+#productimage {padding-bottom:10px;float:left;}
+
+#right { float:left; width:200px; padding:30px 0 0 15px; margin:0;}
+#right .BestSellers h4, #right .AccountMenu .Title { font-size:150%; padding:5px; border-bottom:solid #e7e7e7 1px; width:190px; }
+#right .BestSellers ol, #right .AccountMenu ul { margin:0px; list-style:none; padding:5px 0 10px; }
+#right .BestSellers li, #right .AccountMenu li { padding:2px 0 2px 5px; font-size:90%;  border-bottom:solid #e7e7e7 1px; }
+.address { border-top:1px solid #e7e7e7; padding:10px 0; margin:10px 0; }
+
+
+#right .top {width:185px;display:inline;float:left;padding-left:5px;}
+#right .topred {width:185px;display:inline;float:left;padding-left:10px;background:url(images/tab_background-red.gif) repeat-x;padding:8px;width:185px;font-size:90%;}
+.addressbookpanel .alt {border-top:solid thin #333;}
+.shippingdiscount {text-decoration:line-through;}
+
+#PayPalCheckoutPage { padding:20px; } 
+#PayPalCheckoutPage h2 { font-size:160%; border-top:#333 thin solid; padding:20px 0 10px; margin:10px 0 0; }
+#PayPalCheckoutPage h1 { font-size:250%;  }
+#PayPalCheckoutPage table { width:450px; } 
+#PayPalCheckoutPage td.formlabel { text-align:right; } 
+#PayPalCheckoutPage td { padding:3px 14px 3px 0; }
+#PayPalCheckoutPage .Terms { padding:10px 0;  border-top:#333 thin solid; margin:5px 0;  } 
+#PayPalCheckoutPage .PlaceOrder { padding:20px 0 0 10px;  border-top:#333 thin solid;  }
+#PayPalCheckoutPage .KeepshoppingButton { float:left;}
+#PayPalCheckoutPage .PlaceOrderButton { float:right; }
+
+/* New Checkout 2010 */
+/* Login */
+
+#LoginWrapper {background:url(images/login_bg.png) 3px 0px no-repeat; height:306px;padding:22px 0 0 0; }
+#LoginWrapper input.LoginField { border:2px solid #B0B0B0; line-height:13px; color:#505050; width:200px; background:url(images/WhiteFade.png) bottom repeat-x; padding:8px 6px; -moz-border-radius: 5px; -webkit-border-radius: 5px;  }
+.divSkipLogin, .LogIn{ text-align: center; }
+span.loginLabel { float: left; }
+
+.LogIn div {float:left;  padding: 0 80px;}
+.LogIn li.errorline { float: left; text-align: left; width:900px; }
+.LogIn li.errorline .message { padding:4px;  width: 814px; }
+li.errorline .icon { padding:4px; }
+.LogIn .messagebox ul { float: left; margin: 0 0 0 -360px; width: 861px; }
+.divSkipLogin p, .LogIn { text-align: center; }
+.LogIn h2{text-align:left; margin-left:100px;}
+.divSkipLogin h2,.LogIn h2  { font-size:30px;}
+.LogIn { padding:40px 0 0 220px; padding:40px 0 0 150px;}
+#LoginWrapper .PasswordReminder a { color:#198D17; text-decoration:underline; }
+
+/* Checkout */
+#ContactSection, #PaymentSection, #ShippingInformation   { background:url("images/Checkout_fade.png") 2px 0px no-repeat; width:920px; padding:0 20px;  }
+#CartSection, #NewsletterSection { background:url("images/Checkout_fade_Cart.png") 2px 0px no-repeat; width:920px; padding:0 20px; min-height:230px;  }
+#CartSection #ReviewTable, #NewsletterDetails{ width:600px; padding:24px; width:920px; }
+#ReviewTable tr.rowheader { border-bottom:1px dotted #A2A2A2; font-size:14px; height:33px; }
+#ReviewTable .itemTable td { border-bottom:1px solid #9e9e9e; height:33px; padding:5px; background:url("images/Review_fade.png") repeat-x bottom;  } 
+#ReviewTable .totals table { float:right; }
+#ReviewTable .totals table td { border-bottom:1px solid #9e9e9e; height:25px; padding:5px 10px; }
+#ReviewTable  .grandtotal td { font-size:20px; background:#e2e2e2; height:35px;  }
+#ReviewTable td.alignright, #ReviewTable th.alignright { text-align:right; padding:0 6px 0 0;}
+#ReviewTable th.center, #ReviewTable td.center { text-align:center; width:40px;}
+#CheckoutCon strong { font-weight:normal; }
+#CheckoutCon h1 { background:url("images/Checkout_basket.png") 0 12px no-repeat; font-size:250%; padding:23px 0 19px 60px; } 
+#CheckoutCon select {border:none;background-color:#FFF;color:#000;margin:0;padding:0;}
+#CheckoutCon .checkoutright {margin-left:20px; border-left:solid thin #333; padding-left:20px;}
+#CheckoutCon h2 {font-size:160%;margin:0px;padding:15px 0 15px 0;letter-spacing:0px; font-size:200%; }
+#CheckoutCon h4 { font-size:160%;margin-bottom:10px;margin-top:5px;}
+#CheckoutCon legend { font-size:14px; padding:0 10px;  }
+#CheckoutCon input:hover { background:#fffff1; } 
+#CheckoutCon  fieldset { border:0; border-top:1px solid #9e9e9e;padding:0px 0 20px 30px; margin:0px 0 0; }
+#CheckoutCon input, #CheckoutCon  select {-moz-border-radius:4px 4px 4px 4px;border:1px solid #e2e2e2;font-size:12px;padding:3px;}
+#CheckoutCon td.formlabel  { width:100px; height:30px; padding:0 5px 0 0; text-align:right; } 
+#CheckoutCon  .buttonrow  { float:left; margin:30px 0 0; width:900px;  padding:20px;  }
+#CheckoutCon .DeliverySection {width:350px;float:left;margin:-1px 10px 0 40px;padding:10px; background:url("images/Review_fade.png") repeat-x bottom #fff; border:2px solid #e2e2e2; -moz-border-radius: 5px; -webkit-border-radius: 5px; } 
+#CheckoutCon .DeliverySection h3 { font-size:150%; padding:4px 0 12px 39px; background:url("images/van.png") no-repeat;  }
+#CheckoutCon .ShippingAddress { float:left; padding:20px 0; }
+#CheckoutCon .checkboxWrapper {  padding:20px 0; }
+#CheckoutCon .btnKeepShopping { float:left; }
+#CheckoutCon .btnPlaceOrder { float:right; }
+#CheckoutCon td.PayPal { padding: 20px 0; }
+#CheckoutCon  .PayPalText { padding:5px; font-style:italic;     padding: 10px 0 0; }
+
+
+/* Site Terms */
+#SiteTerms { line-height:22px; float:left;margin:-66px 0 0 48px;padding:15px; background:url("images/Review_fade.png") repeat-x bottom; border:2px solid #198d17; -moz-border-radius: 5px; -webkit-border-radius: 5px; }
+#SiteTerms  input { margin:0 11px 0 0; }
+#SiteTerms a { padding:0 0 0 26px; color:#198D17; }
+fieldset.emailaddress {  }
+.callToOrder { padding:15px; background:#191919 none repeat scroll 0 0; margin:3px 5px 9px; } 
+.callToOrder .red { color:#FF0000; }
+
+
+/*Checkout Receipt Page */
+
+#CheckoutReceipt { float:left; width:100%;}
+#CheckoutReceipt span.red { color:#FF0000; }
+#CheckoutReceipt h1 { font-size:200%; } 
+#CheckoutReceipt  #NewUsersBox { width:900px; }
+#CheckoutReceipt .BillingAddressField { font-size:18px; }
+#CheckoutReceipt span.lightlabel  { padding:3px 0; font-size:18px; color:#ff0000; }
+#CheckoutReceipt .Receipt { background:url("images/Checkout_fade.png") no-repeat scroll 2px 0 transparent; margin:0; padding:20px; }
+#CheckoutReceipt #printthispage {  }
+#CheckoutReceipt #NewUsersBox  { background:url("images/Checkout_fade.png") no-repeat scroll 2px 0 transparent; margin:0; padding:20px; } 
+
+/*------ Error Messages*/ 
+.error ul, .messagebox ul {-moz-border-radius: 10px;-webkit-border-radius: 10px;background:url(images/error_fade.png) repeat-x #600;border:3px red solid;color:#FFF;list-style:none;margin:0;padding:10px 10px 10px 15px;font-style:italic;} 
+li.errorline .icon { float: left;width: 20px;}
+li.errorline .message  { padding: 10px 40px;}
+.errorline a{color:#fff;text-decoration:underline;}
+li.errorline { }
+messagebox { }
+
+.blockUI h1 { font-size:220%; }
+#CheckoutCon .LoadingSubmit {  border:0 none; cursor:pointer;width:165px; height:40px; display:block; float:left; } 
+.CheckoutPay {display:block;float:right;width:450px;}
+
+.Receipt { padding:10px; margin:20px 30px; }
+.Receipt h1 { font-size:300%; }
+.Receipt h3 { font-size:160%; margin:0;padding:5px 0; }
+.ViewOrders h3 { font-size:100%; } 
+.CheckoutTotal {width:200px;display:block;float:right;margin-top:20px;}
+.CheckoutDateField {display:block;height:20px;float:left;width:200px;}
+
+#CheckoutCon .RadioNone input {border:0;margin:0 5px -1px 0;padding:0;}
+#processLeft {width:420px;float:left;}
+#processRight {width:430px;float:right;}
+#nextRow {float:left;clear:left;text-align:right;width:880px;margin:6px 0 20px;}
+#checkoutEmailAddress table {width:300px;}
+.formField {display:block;float:left;text-align:right;width:620px;padding:5px 0 5px 5px;}
+.formField a {color:#FFF;text-decoration:none;padding:2px;}
+.formField input,select {border:1px solid #E7E7E7;font-size:12px;font-family:Lucida Sans Unicode, Lucida Grande, LucidaGrande, Lucida Sans, Geneva, Arial, sans-serif;margin-left:5px;padding:2px;}
+.formField .formlabel {float:left;width:200px;border:0;}
+.formField .formhint {float:right;width:100px;position:relative;display:block;text-align:left;}
+.buttonrow {float:left;display:block;margin-top:10px;}
+.primaryaddresses .BillTitle { padding:0 0 10px; font-size:120%; font-weight:bold;  } 
+
+/* Footer */
+#Footer { position: relative; padding:25px 0 25px 0; background:#000; color:#FFF; height:190px;   }
+#Footer ul { text-decoration:none; color:#CCCCCC; list-style:none;   }
+#Footer a { color:#CCCCCC; text-decoration:none;  }
+#Footer a:hover { color:#FFFFFF;  }
+#Footer li { }
+/* V1 footer leave */
+#footer h4 { font-size:140%; padding:0 0 7px; margin:0px; letter-spacing:-0.1px;}
+#footer { width:960px; float:left; margin:0; padding:22px 0 10px 0; }
+#footer ul { float:left; list-style:none; padding:0px 10px; border-right:1px solid #1A1A1A; margin:0;} 
+#footer li { padding:1px 0 0; font-size:11px; }
+#footer a, #footer a:visited, #footer a:link { text-decoration:none; color:#FFF; font-size:90%; }
+#footer a:hover { text-decoration:underline; color:white; }
+#footer ul.Categories { width:90px; padding:0px 10px 0px 20px;   }
+#footer ul.UsefulLinks { width:115px; }
+#footer ul.Contacts { width:165px; }
+#footer ul.chooseSite { width:170px; padding:0 10px 0 13px; }
+#footer ul.secureInfo { padding:0 0 0 10px; border-right:0;width:275px; } 
+#footer .cardsCom { }
+#footer .cards { background:url(images/footer-icons.png) -2px -93px; width:240px; height:75px; float:left; } 
+#footer .logo { background:url(images/footer-icons.png) -22px -118px; width:230px; height:30px; float:left; }
+#footer  h4.Share { margin:51px 0 0; padding:0;  } 
+#footer a.Twitter { background:url(images/footer-icons.png)  -485px -224px; width:98px; height:35px; float:left; font-size:0; text-indent:-9999px; }
+#footer a.Youtube { background:url(images/footer-icons.png) -417px -224px; width:64px; height:35px; float:left; font-size:0;  text-indent:-9999px;}
+#footer a.usLinkUS { background:url(images/footer-icons.png) -273px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px;}
+#footer a.usLinkUS:hover { background:url(images/footer-icons.png) -100px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px;}
+#footer a.ukLinkUS { background:url(images/footer-icons.png) -13px -175px; width:75px; height:35px; float:left; font-size:0;text-indent:-9999px; }
+#footer a.ukLinkUS:hover { background:url(images/footer-icons.png) -186px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px;}
+#footer a.usLinkUk { background:url(images/footer-icons.png) -92px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px;}
+#footer a.usLinkUk:hover { background:url(images/footer-icons.png) -265px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px; } 
+#footer a.ukLinkUk { background:url(images/footer-icons.png) -186px -175px; width:75px; height:35px; float:left; font-size:0; text-indent:-9999px;}
+#footer a.ukLinkUk:hover { background:url(images/footer-icons.png) -13px -175px; width:75px; height:35px; float:left; font-size:0;text-indent:-9999px; }
+#footer a.datelLogo { background:url(images/footer-icons.png) -271px -258px; width:170px; height:80px; float:left; font-size:1px; text-indent:-9999px;}
+#footer a.secure { background:url(images/footer-icons.png) -358px  -175px; width:266px; height:44px; display:block; font-size:0; text-indent:-9999px; }
+
+
+/* Cart */
+#cartcontainer {background:#1a1a1a;float:left;display:inline;font-size:85%;width:180px;padding:0 10px;}
+#cartcontainer .total {font-size:123%;float:right;display:inline;text-align:right;padding:5px 0 10px;}
+#cartcontainer .MiniCartCheckoutButton {float:right;display:inline;text-align:right;cursor:pointer;margin:0 0 10px;}
+#cartcontainer .ProductImage, #cartcontainer .ProdName,#cartcontainer .minus,.plus {float:left;display:inline; }
+#cartcontainer .ProductImage {width:50px;padding:0 10px 0 0;}
+#cartcontainer .ProdName {width:118px;padding:6px 0 0;}
+#cartcontainer .QtyControl {float:left;width:118px;padding:3px 0;}
+#cartcontainer .minus,.plus {cursor:pointer;padding:2px 0 0;}
+#cartcontainer .number {float:left;width:12px;padding:0 0 2px 5px;}
+#cartcontainer .productimagecolumn {border-bottom:#000 solid 1px;display:block;height:80px;width:180px;margin:0 0 5px;padding:0 0 5px;}
+#pnlMain {font-weight:400;text-align:left;vertical-align:middle;}
+.addresstypeheader {font-size:110%;color:red;padding-bottom:10px;}
+
+#loginPage h1,#loginPage h2 { text-transform:uppercase; font-size:200%; }
+#loginPage h3 { text-transform:uppercase; font-size:150%; }
+#loginPage .top { margin-bottom:16px; }
+#loginPage table { margin-bottom:14px;}
+#loginPage { float:left; display:block; width:920px;}
+#loginPage p { width:405px;  } 
+#loginPage input.forminput {   margin: 2px 5px; }
+#loginPage .PasswordReminder  { padding:2px 4px 10px; font-style:italic; }
+
+#SignInBox { float:left; width:440px; padding:0 10px 0; }
+#SignInBox .greyBox { background:#e7e7e7; padding:10px; margin:0px 0px 10px -10px } 
+#NewUsersBox { float:left; width:440px; display:inline; padding:10px 0 10px 10px; border-right:#e7e7e7 solid 2px; }
+/*#SignInBox .InPutBox input { border:0px #1a1a1a;  background:#1a1a1a; }*/
+
+#loginPage select,#loginPage textarea,#checkoutPage input,#checkoutPage select,#checkoutPage textarea {background-color:#FFF;color:#000;border:2px solid #FFF;margin-left:5px;text-align:left;padding:0;}
+#SignInBox .btn input, #SignInBox .btn3 input { text-decoration:none; padding-left:5px; }
+#SignInBox .btn input {width:46px;}
+#SignInBox .btn3 input {width:124px;}
+
+/* console colour */
+.psp, .psp a,.psp a:visited { color:#107ac1; }
+.Xbox360 a,.xbox360 a:visited { color:#93cd46; }
+.ds, .ds a,.ds a:visited { color:#FFC411; }
+.PS3 a,.PS3 a:visited { color:#EC0000; }
+.PS2, .PS2 a,.PS2 a:visited { color:#3096FF; }
+.GCN a,.GCN a:visited { color:#7a5ccc; }
+.Gadgets a,.Gadgets a:visited { color:#ED257A; }
+.Xbox { color:#409C3B;}
+.PSP { color:#107AC1;}
+.PS3 { color:#EC0000; }
+.GCN { color:#7A5CCC; }
+.XBox { color:#409C3B; }
+.Xbox360 { color:#93cd46; }
+.DS, .GBA { color:#FFC411; }
+.PS2 { color:#3096FF; }
+.Gadgets{ color:#ED257A; }
+.Wii, .Wii a,.Wii a:visited { color:#09C2EA; }
+.white, .white a { color:#FFFFFF; }
+
+/* Code Search Page */
+#CodeSearch { display:block; float:left; width:695px; padding:15px 0 0; min-height:600px; }
+#CodeSearch .Results { margin:0 0 20px 0; padding:30px 0 0 0px; }
+#CodeSearch h2 { font-size:180%; padding:0px 0px 5px 10px; } 
+#CodeSearch .RequestLink { font-size:120%; padding:0 0 12px 10px; }
+#CodeSearch .RequestLink img { margin:0px 0px -4px; padding:0px 0px 0px 4px; }
+#CodeSearch .SearchBar { -moz-border-radius:4px; background:#ebebeb;display:block;float:left;width:685px;height:30px;margin:18px 0 10px;padding:4px 0 4px 15px;}
+#CodeSearch .clsCheatCodesTitleInfo { padding:0 0 0 10px; }
+.trigger {background:#000 url(images/buttons/sel-arrow.png) repeat-x right;border:0 solid #CCC;color:#FFF;display:block;text-decoration:none;width:180px;padding:6px;}
+.activetrigger {cursor:pointer;background:#000 url(images/buttons/sel-arrow.png) repeat-x right;border:0 solid #CCC;color:#FFF;display:block;text-decoration:none;width:180px;padding:6px;}
+.dropcontainer ul {color:#FFF;list-style-type:none;background:url(images/buttons/sel-arrow-2.png);position:absolute;width:200px;cursor:pointer;margin:0;padding:0;}
+.dropdownhidden {top:0;left:-999em;}
+.dropdownvisible {top:0;left:0;}
+#CodeSearch .dropcontainer ul a {display:block;width:182px;text-decoration:none;background-position:right;background-image:none;color:#FFF;padding:6px;}
+#CodeSearch .dropcontainer ul a:hover {background-color:red;background-image:none;cursor:pointer;}
+.dropcontainer {position:relative;}
+
+#CodeSearch .texta { -moz-border-radius: 4px 4px 4px 4px; border: 1px solid #E2E2E2;font-size: 12px; padding: 3px;float:left;height:19px;width:200px;margin:0 40px 0 0;}
+#CodeSearch	.searchdrop {list-style:none;font-variant:normal;cursor:pointer;width:auto;margin:0;padding:0;}
+#CodeSearch	.searchdrop ul {background:url(images/buttons/sel-arrow-2.png);background-repeat:repeat;}
+#CodeSearch	.searchdrop li {background:url(images/buttons/sel-arrow-2.png);background-repeat:repeat;cursor:pointer;width:100%;margin:0;padding:4px;}
+#CodeSearch	.searchdrop li:hover {cursor:pointer;background-image:none;background-color:red;}
+#CodeSearch .searchdropitem {cursor:pointer;color:#FFF;}
+#CodeSearch .searchdropitemhover {cursor:pointer;background-color:red;background-image:none;}
+#CodeSearch .btn { -moz-border-radius: 15px 15px 15px 15px; margin: 2px 0 0 15px; padding: 4px 10px; -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); background: url("images/main.png") repeat-x scroll 0 -315px #5A5A5A;
+ color: #FFFFFF; text-decoration: none; border:0; }
+#CodeSearch .btn:hover {cursor:pointer;background: url("images/main.png") repeat-x scroll 0 -315px #F80000;}
+#CodeSearch .top {-moz-border-radius:4px;display:block;float:left;width:340px;background:#ebebeb;margin:0;padding:10px 0 9px 10px;}
+#CodeSearch .Columns .top {}
+#CodeSearch .SearchReasult {display:block;float:left;width:710px;margin-bottom:20px;}
+#CodeSearch .Columns {display:block;float:left;width:355px;height:100%;}
+#CodeSearch .Columns a {display:block;background-color:#E2E2E2;width:318px;margin:2px 0 0;padding:4px 15px 4px;font-size:90%;-moz-border-radius: 4px;border-bottom: 1px solid #D3D3D3;}
+#CodeSearch .Columns a:hover {background-color:#ccc;color:#000;}
+#CodeSearch .Columns li {list-style:none;}
+#CodeSearch .SavesColumns {float:left;width:352px;display:block;}
+#CodeSearch .SavesColumns li {-moz-border-radius: 4px 4px 4px 4px;list-style:none;background-color:#e7e7e7;float:left;display:block;;margin:3px 0px;padding:3px 10px 5px;}
+#CodeSearch .SavesColumns2 {float:left;width:340px;display:block;}
+#CodeSearch .SavesColumns2 li {list-style:none;background-color:#1a1a1a;float:left;display:block;width:314px;margin:5px 0;padding:10px;}
+#CodeSearch .download {  width:56px;cursor:pointer;float:right;background-image:url(images/Buttons/download-saves.png);-moz-border-radius: 4px; background-repeat:no-repeat; background-position:right; text-align:left; padding:5px 30px 5px 5px;}
+#CodeSearch .clsSearchResultsDescription {width:320px; float:left; }
+#CodeSearch .clsSearchResultsTitle { margin-bottom:10px; }
+#CodeSearch .clsSearchResultsInfo {font-style:italic;width:320px; float:left; }
+#CodeSearch .PageCount a {border:1px solid #D3D3D3;display:block;float:left;width:10px;margin:2px;padding:2px 6px;-moz-border-radius: 4px; }
+
+#right .Confused  { padding:0px 0px 0px 5px;  }
+#right .Confused h4 { text-transform:uppercase; padding:0; }
+#right .Confused p { text-align:left; font-size:90%; }
+#right .confusedMove { margin:0 0 0 -45px; position:relative; z-index:50; }
+#right .Top5Header h2 { padding:10px 0px 0px 0px; font-size:150%;  } 
+#right .Top5Header {  text-transform:uppercase; color:White; padding:5px 0px 0px 0px; }
+#right .Top5Cheats ul { float:left; list-style-type:none; margin:0; padding:0 0 0 0px;  }
+#right .Top5Cheats li {border-bottom:1px solid #e7e7e7; font-size:11px; padding:3px 0; }
+#right .Top5Cheatslinks { display:none; }
+#right .Top5Cheats { padding:0px 0px 0px 5px;}
+
+
+#CodeSearch .PageCount a:hover {background-color:#FFF;color:red;}
+#CodeSearch .PageCount b {background-color:#FFF;color:#1a1a1a;font-size:120%;}
+#CodeSearch .Label {float:left;clear:both;font-size:160%;width:100%;margin:0 0 15px;}
+#CodeSearch .clsSavesSubHeader {float:left;clear:both;width:100%;margin:0 0 15px;}
+#CodeSearch .ColumnsTop { padding:0px 0px 5px 10px; float:left; }
+#CodeSearch  .PrintButton { padding:10px 0px 10px 0px; }
+
+#CodeSearch .Results li {background-color:#e7e7e7;list-style-type:none;margin:5px 0 0;padding:7px 10px 5px 20px;-moz-border-radius:4px;}
+#CodeSearch .Results ol {margin:0;padding:0;}
+#CodeSearch .Results img {position:absolute;margin-left:-50px;margin-top:-7px;}
+#CodeSearch .Results span.consoleTextColour { color:#000;}
+
+/*.clsHeader {font-size:160%;}*/
+.clsItemHeader {font-size:129%;}
+#right .CSPanelContent {float:right;width:178px;border:1px solid #520000;background-color:#1A1A1A;font-size:85%;margin:0pt;overflow:auto;padding:0pt 10px;text-decoration:none;}
+
+.SearchLinks { padding:10px 0px 26px; float:left; }
+.SearchLinks a { float:left; display:block; margin:3px 0px 0px 5px; color:#FFFFFF; font-size:110%; border-bottom:thin solid #363636; width:160px; padding:2px 0px 11px;}
+.SearchLinks a:hover { border-bottom:thin solid  #666666;  }
+.SearchLinks img { float:right; margin:-15px 3px 0px 0px; padding:0px 0px 0px 10px; }
+.CSproductImage {float:left;padding:5px 0;width:178px;}
+.CSProduct {float:left;font-size:140%;width:178px;padding:5px 0;}
+.CSProduct a { color:#FFFFFF; }
+.CSProduct a:hover { color:red;}
+.CSProductcost {float:left;font-size:120%;padding:5px 0;}
+.CSproductBody {float:left;width:178px;}
+.searchresultspane {margin:15px;}
+
+
+#placeHolderPadding a,a:visited a:link,#SignInBox a {text-decoration:none;}
+#cartcoupons .PromText,#pnlEmailToFriend {display:block;float:left;}
+
+#checkoutPage h1,#checkoutPage h2 {color:red;margin:10px 0 20px;}
+
+#CustomPage h2,#CustomPage h3 {font-size:20px;border-bottom:solid 1px #1a1a1a;margin-bottom:10px;padding:30px 0 10px 0;}
+#CustomPage .ColumnOne h2 { padding:0 0 10px 0; }
+#CustomPage li { margin:0 0 0 30px; }
+
+#SignInBox .btn input:hover,#SignInBox .btn3 input:hover {background-image:none;}
+
+.Wii a,.wii a:visited,.wii a,.wii a:visited, .wiicolour {color:#09c2ea;}
+
+/*#CodeSearch h1,#ProdSearchPage h1 {font-size:200%; padding:0px 0px 0px 10px; width:650px; }*/
+#CodeSearch .game,#ProdSearchPage .game {float:left;display:block;margin-right:10px;margin-top:5px;}
+#CodeSearch .Columns ol,#CodeSearch .SavesColumns ol,#CodeSearch .SavesColumns2 ol {display:block;float:left;margin:0;padding:0;}
+#CodeSearch .clsTickCode,#CodeSearch .clsRadio {padding-left:50px;}
+.searchresultspane h3,#ProdSearchPage h4 {font-size:130%;}
+.productRegistrationNote {width:190px; height:104px; padding:60px 120px 0 12px; float:right; margin-left:30px; background-image:url(images/productRegistrationBG.png);}
+.greyPostitWide {margin: 12px 0 12px 0; width:480px; background:url(images/grey-postit-wide.png) no-repeat scroll -20px 0px; float:left; padding:14px 14px 10px 14px; border-bottom:1px solid #e7e7e7;border-left:1px solid #e7e7e7;}
+#ProductDescription { border-top:1px solid #E7E7E7; padding:10px 0 0 0; }
+#ProductDescription ul { padding:0px 0 6px 20px; margin:6px 0 10px; }
+#ProductDescription li { padding:2px 0; }
+#productsection .quantityField { display:none;}
+#ProductDescription .arffList li  { padding:0; margin:1px; }
+#ProductDescription .arffList li.free { background:url(images/arfree.gif) no-repeat 37% 50%; }
+#ProductDescription .arffLis ul { } 
+
+/* Admin Panel */
+#adminpanel {font-size:11px;background-color:#303030;color:#999;border-bottom: 1px solid #666;padding:5px;}
+#adminpanel a {color:#999;text-decoration:none;}
+#adminpanel a:hover {text-decoration:underline;}
+
+/* Codejunkies tv player */
+
+#playerHead { margin:0px; float:left; display:block; width:735px; /*background:url(../../../CJTV/images/play-header.jpg) no-repeat;*/ padding:10px 0; }
+#playerHead h1 { font-size:300%; padding:0 0 15px;}
+#cjtvLinksSide { padding:15px 0; }
+#cjtvLinksSide a { float:left; padding:7px 0 0 0; }
+
+
+/* Codejunlies tv player over*/
+
+/* support */
+#KnowBase { float:left; padding:0 0 20px 0; }
+#KnowBase h1 { border-bottom:1px solid #e7e7e7;  margin: 0 0 20px; padding: 0 0 10px; } 
+#KnowBase h3,#KnowBase h4 { padding:0 0 23px 0;}
+/*#KnowBase .clsHeader { border-bottom:1px solid #1A1A1A; font-size:140%; color:#FF0000; margin:0 0 11px; float:left; width:100%; display:block; text-transform:uppercase; font-family:"Myriad Pro",Lucida Sans Unicode,Lucida Grande,LucidaGrande,Lucida Sans,Geneva,Arial,sans-serif; }*/
+#KnowBase .RedBoxMain .clsHeader { color:#FFFFFF; font-size:142%; border-bottom:medium none;  } 
+#KnowBase .BigBox { width:970px;  }
+#KnowBase ol, #KnowBase ul  { padding: 0 0 0 20px; } 
+#KnowBase .BigBoxHeader { background:url(images/main-box.png) repeat 0px 2px; display:block; width:970px; height:37px; float:left; padding:18px 0px 0px 10px;  }
+#KnowBase .BigBoxMain {background:#e7e7e7; width:960px; float:left; display:block; padding:15px 10px; -moz-border-radius:4px;}
+#KnowBase .BigBoxBottom { background:url(images/main-box.png) no-repeat 0px -130px; width:920px; height:5px; float:left; display:block; }
+#KnowBase #divSupportArticlesResults { display:block; float:left; padding:0px 0px 0px 5px; border:1px #e7e7e7 solid; }
+/*#KnowBase .formField input, select { background:#ffffff; color:#000000;}*/
+#KnowBase .plus { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -747px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .search {  display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -747px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .most { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -747px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .download { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -677px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .question { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -470px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .articles { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -548px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .discuss { display:block; width:50px; height:50px; background:url(images/main-box.png) no-repeat scroll -613px -70px; float:left; margin:-13px 7px 0px 0px; }
+#KnowBase .HalfBox {  padding:0px 0px 0px 0px; float:left; width:480px;  }
+#KnowBase .HalfBoxHeader { background:url(images/main-box.png) no-repeat 0px -3px; display:block; width:480px; height:37px; float:left; padding:13px 0px 0px 10px;  }
+#KnowBase .HalfBoxMain {background:#e7e7e7; width:480px; float:left; display:block; padding:10px 5px; }
+#KnowBase .HalfBoxBottom { background:url(images/main-box.png) no-repeat 0px -125px; width:451px; height:10px; float:left; display:block; }
+#KnowBase .space { display:block; width:10px; float:left; height:270px; background:#fff; }
+#KnowBase .TabbedPanelsContent { padding:0px; }
+#KnowBase .TabbedPanelsTabGroup { padding:0px 0px 0px 400px; }
+#KnowBase .TabbedPanelsTab li { list-style:none; } 
+#KnowBase .TabbedPanels { padding:0; }
+#KnowBase .RedBox { display:block; padding:10px; float:left;   margin:0;  background:#e7e7e7; width:960px; -moz-border-radius:4px;}
+#KnowBase .RedBox h4 {   padding: 0 0 10px 5px;}
+#KnowBase .RedBoxHeader { clear:both; display:block;  height:20px; float:left; padding:7px 0px 0px 10px; width:900px;  }
+#KnowBase .RedBoxHeader2 { text-transform:uppercase; background:url(../../../support/images/Red-box.png) no-repeat 0px 0px; display:block;  height:20px; float:left; padding:7px 0px 0px 10px; width:920px;  }
+#KnowBase .RedBoxMain {  float:left; display:block; padding: 0 0 10px; }
+#KnowBase .RedBoxBottom { background:url(../../../support/images/Red-box.png) no-repeat 0px -90px;  height:10px; float:left; display:block; width:920px; }
+/*#KnowBase .TabbedPanelsTab { background:url(../../../support/images/red-tabs.png) no-repeat -180px 0px; padding:9px 4px 2px 12px; text-transform: uppercase ; float:right; text-align:center; width:147px;}
+#KnowBase .TabbedPanelsTabSelected { background:url(../../../support/images/red-tabs.png) no-repeat 3px 1px; text-transform: uppercase;}
+#KnowBase .TabbedPanelsTabHover { color:#000000;  }*/
+#KnowBase .row { border-bottom:1px; border-bottom-color:#999999; border-bottom-width:thin; }
+#KnowBase .Header { text-transform:uppercase; color:#FFFFFF; }
+/*#KnowBase .StopTop { background:transparent url(images/main-box.png) no-repeat scroll -915px -3px; display:block; float:left; height:50px; width:5px; }
+#KnowBase .StopBottom { background:transparent url(images/main-box.png) no-repeat scroll -914px -125px; display:block; float:left; height:10px; width:6px; }*/
+#KnowBase .BigBox td { border-bottom:1px solid #d0d0d0; border-top:1px solid #f6f6f6; padding:5px; }
+/*#KnowBase .BigBox input { background:#000000 none repeat scroll 0% 0%; border:3px solid #1A1A1A; color:white; margin:0px; padding:5px; }*/
+#KnowBase .BigBox input {   -moz-border-radius: 4px 4px 4px 4px; border: 1px solid #c7c7c7; padding:5px; clear:left; float:left; margin: 5px 0; }
+#KnowBase .BigBox .button { background:#FF0000; color:#FFFFFF; padding:5px; float:left; -moz-border-radius: 15px; }
+#KnowBase .BigBox .button:hover { background:#990000; cursor:pointer; }
+#KnowBase .answer { color:#FF0000; }
+/*#KnowBase .BigBox .lineItem { border-bottom:1px solid #d3d3d3;  }*/
+#KnowBase .BigBox .highlight, #KnowBase .HalfBox .highlight, .highlight .red,#KnowBase .highlight .red  { background:#dddddd; color:#373737; cursor:pointer;  }
+/*#KnowBase .HalfBox .lineItem { border-bottom:1px solid #d3d3d3; }*/
+
+#KnowBase .red { color:#FF0000; }
+
+/*#KnowBase .TabbedPanelsContent { font-size:100%; }*/
+#KnowBase ul { padding:6px 0 0 0px;}
+#KnowBase li { padding:4px 0 4px 2px; }
+#KnowBase .kbInlineImage { width: 220px; float: left;  text-align:center;  margin: 0 0 10px 0; }
+#KnowBase p { letter-spacing:-0.4px; margin:6px 0; font-size:110%;}
+#KnowBase .NoWrap { padding:7px 100% 17px 0px;  }
+#KnowBase .WrapRight { float:right; padding:0 0 0 15px;  }
+#KnowBase .DetailsLeft { float:left; padding:0 0 20px 10px; width:250px; margin:0 14px 0 0;border-right: 1px solid #E7E7E7; }
+#KnowBase .DetailsLeft h4 { padding:0; }
+#KnowBase .Article {	float:left; padding:0 0 0 19px;	width:600px; }
+#KnowBase .Email { background:transparent url(images/icons.png) no-repeat -6px -1px; list-style:none;  padding:5px 0px 0px 26px;} 
+#KnowBase .Print { background:transparent url(images/icons.png) no-repeat -6px -29px; list-style:none;  padding:5px 0px 0px 26px;} 
+#KnowBase .Bookmark { background:transparent url(images/icons.png) no-repeat -6px -59px; list-style:none; padding:5px 0px 0px 26px; } 
+#KnowBase  .RedHighlight, #KnowBase  .RedHighlight a  { color:#FFFFFF; background:#990000; cursor:pointer; } 
+#KnowBase .clsNoResults { font-size: 14pt; text-align: center; }
+#KnowBase .NeedHelpText { line-height:40px; float:left; }
+#KnowBase .ArtHeader { border-bottom:1px solid #1A1A1A; font-size:140%; color:#FF0000; margin:0 0 11px; float:left; width:100%; display:block; }
+#KnowBase .DetailsHeader { font-size:140%; color:#FFFFFF; margin:0 0 11px; float:left; width:250px; display:block; }
+/* Over rides for print */
+
+/* Contact page */
+#Contact { float:left; width:920px;  }
+#Contact .Header {  margin:0 0 16px; float:left; border-bottom:#FF0000 1px solid; width:900px; }
+#Contact .Header a { text-decoration:underline; }
+#Contact .LeftBox { float:left; width:450px; }
+#Contact .RightBox { float:left; width:450px; border-left:1px solid #FF0000; padding:0 0 0 10px;}
+#Contact .FieldText { white-space:nowrap; }
+#Contact select { margin:0px; }
+#Contact textarea { background:#FFFFFF; color:#1a1a1a; font-family:Lucida Sans Unicode, Lucida Grande, LucidaGrande, Lucida Sans, Geneva, Arial, sans-serif; font-size:90%; }
+#Contact .HeadImg{ float:left; padding:0 16px 15px 2px; }
+#Contact .TechBold {font-size:170%; text-transform: uppercase; padding:0px 0px 5px 0px; }
+#Contact .red { color:#FF0000; }
+#Contact h1 { font-size:200%; padding:12px 0 0; }
+#Contact h2 { font-size:140%; }
+#Contact .highlight { background:#1a1a1a; } 
+#Contact td { padding:5px; }
+#Contact h4 { padding:0px 0px 5px 0px; font-size:130%; }
+#Contact .small { font-size:80%; }
+.AboutUsLeftText { float:left;width:740px; }
+table#dgOrders  { width:500px; }
+
+
+/* New Code Search 09 - updated 2010*/ 
+/*Cat Search Page Style */
+.clsSearchBar .selector { float:left; }
+.CatCodeSearch {  width:435px; float:left; padding:0 0 0 15px;}
+.CatCodeSearch h1 { width:400px; } 
+.CatCodeSearch h3 { font-size:20px; padding:10px 0px; width:315px; } 
+.CatCodeSearch .RadioBut { float:left; height:22px; padding:10px 0 10px 10px;  width:370px;}
+.CatCodeSearch .SearchSec { float:left; padding:10px 0 0 10px;} 
+.RigthSearchBox  input { width:189px; }
+.RigthSearchBox  input.hint, .LeftSearchBox input.hint { color:#878787;}
+.LeftSearchBox input { width:206px; }
+.SearchSec .inputbtn { background:#000000; width:30px; border:1px solid #2c2c2c; color:#FFFFFF; margin:0; padding:1px 3px 4px; height:23px; cursor:pointer;   } 
+.SearchSec .inputbtn:hover { background:#FFFFFF; color:#2c2c2c; cursor: pointer;} 
+.CatCodeSearch .SlidingPanelsContent  { width:410px; height:500px;}
+.CatCodeSearch .PagerBut { float:left; padding:0 0 0 12px; left:425px; margin:-36px 0; width:40px;}  
+.CatCodeSearch .PagerBut .Up { background:transparent url(/BVModules/Themes/Codejunkies/images/Category-page/Pager-buttons.png) no-repeat scroll 0px 0; width:37px; height:25px; float:left; cursor:pointer;  }  
+.CatCodeSearch .PagerBut .Down { background:transparent url(/BVModules/Themes/Codejunkies/images/Category-page/Pager-buttons.png) no-repeat scroll 0px -30px; width:37px; height:25px;  float:left; cursor:pointer;     }  
+.CatCodeSearch .PagerBut .PageNum { font-size:85%; text-align:center;} 
+.CodeSearchListAltRow { background:#1a1a1a; padding:4px; font-size:90%;} 
+.CodeSearchListAltRow a:hover {  } 
+.CodeSearchListRow { padding:4px; font-size:90%; }
+.CatCodeSearch .SlidingPanels  { width:410px; height:500px; float:left; }
+.game_title_id {font-size:90%; color:gray;}
+#placeHolderPadding .CodeSearchListAltRow a,#placeHolderPadding .CodeSearchListRow a { color:#FFFFFF; } 
+
+
+/* Choose Console Page */ 
+#CatChoose {}
+#CatChoose h1 { font-size:230%; padding:5px 0 5px 10px; border-bottom:solid #e7e7e7 1px; }
+#CatChoose h2 { font-size:150%; padding:15px 0 15px 10px;  }
+#CatChoose a {   float:left; padding:0 40px 45px; text-align:center;  }
+#CatChoose a:hover {}
+#CatChoose img:hover { text-decoration:none; }
+#CatChoose .ConName {  } 
+#CatChoose h3 a { float:left; margin:0px; padding:15px; border-top:1px solid #e7e7e7; width:100%; text-align:left;  }
+#CatChoose h3 img { padding:0 5px; margin:-4px 0; }
+
+
+.free {background:url("/images/products/label_sprite.png") no-repeat scroll 0  0 transparent;height:50px;position:absolute;left:0px;top:0px;width:50px;z-index:1001;}
+#cartPage .cartoffer, a .cartoffer { float:left; font-size:90%; padding:0px 0px 4px 0px;width:410px;color:#93CD46; } 
+
+@media print {
+
+body {text-align:center;color:#FFF;background: #FFFFFF;font-size: small;background-position:center center;margin:0;padding:0;}
+#BlackBarckground {height:100%;width:950px;margin-left:auto;margin-right:auto;padding:0;}
+#container {display:block;position:relative;min-height:86%;width:100%;margin-left:auto;margin-right:auto;color:#FFF;font-weight:400;color:#000000;}
+#placeHolderPadding {text-align:left;display:inline;float:left;min-height:100%;padding:0 15px 15px;}
+#CodeSearch {display:block;float:left;width:705px;padding-right:10px;}
+#CodeSearch .Label {float:left;clear:both;font-size:160%;width:100%;margin:0 0 15px;}
+#CodeSearch  .PrintButton { display:none; }
+#CodeSearch .CodeIcon { display:none; }
+#Header { display:none; }
+#footer { display:none;}
+#right { display:none; }
+#CodeSearch .clsSearchResultsTitle {color:red;margin-bottom:10px;}
+#CodeSearch .CodeIcon { display:none; }
+.clsSearchBar  { display:none; }
+#CodeSearch .PageCount a {color:#000000;display:block;float:left;width:10px;margin:2px;padding:2px 6px;}
+#CodeSearch .PageCount a:hover {background-color:#FFF;color:red;}
+#CodeSearch .PageCount b {background-color:#FFF;color:#1a1a1a;font-size:120%;}
+#CodeSearch  .PrintButton { display:none; }
+#CodeSearch .Label {float:left;clear:both;font-size:160%;width:100%;margin:0 0 15px;}
+#CodeSearch .Results li {display:block;float:left;width:100px;list-style-type:none;padding:5px;}
+#CodeSearch .Results ol {display:block;float:left;clear:both;margin:0;padding:0;width:900px}
+} /* Print End */

@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+body { background: #000000 url(http://uk.codejunkies.com/images/logo_tag.png ) no-repeat; color:#FFFFFF; font-family:Lucida Sans Unicode,Lucida Grande,LucidaGrande,Lucida Sans,Geneva,Arial,sans-serif; font-size:11px; }
+h1 { position:absolute; margin:-78px 0; }
+h1 ,h2, h3 { font-weight:normal; font-family:"Myriad Pro",Lucida Sans Unicode,Lucida Grande,LucidaGrande,Lucida Sans,Geneva,Arial,sans-serif; font-size:700%; color:#FFFFFF; }
+#Grey h2 { font-size:400%; color:#FF0000;  margin:15px 0 5px 0;}
+#Grey h3 { font-size:200%; margin:5px 0; }
+#Grey { background:#333333;  -moz-border-radius: 5px; width:620px; left:100px; padding:25px 30px; float:left; margin:130px 0 0 100px;}
+ul#Col { float:left; padding:0 0 0 15px;}
+ul#ColR { float:left; clear:right;}
+#ColR li, #Col li { list-style-type:disc; color:#FF0000; }
+#Grey p { float:left;  }
+#Grey a  { color:#FFFFFF; text-decoration:none; } 
+#Grey ul a:hover { text-decoration:underline; color:#CCCCCC; }
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sorry! - Codejunkies </title>
+</head>
+
+<body>
+
+
+	
+<div id="Grey">
+<h1>Sorry!</h1>
+<h2>Page Not Found</h2>
+        <h3>Unfortunately, the page you requested could not be found.</h3>
+            <p>If you were expecting a product the product may have been discontinued or renamed.
+            Use the links below to visit the different sections of the Codejunkies store and try browsing for the product:</p>
+        
+        <ul  id="Col">
+            <li><a href="http://uk.codejunkies.com/Departments/PSP.aspx">Playstation Portable</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/PS3.aspx">Playstation 3</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/Xbox.aspx">Xbox</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/ds-and-gba.aspx">DS &amp; GBA</a></li>
+        </ul>
+        
+        
+        <ul  id="ColR">
+            <li><a href="http://uk.codejunkies.com/Departments/PS2.aspx">Playstation 2</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/gcn.aspx">Gamecube</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/Xbox360.aspx">Xbox360</a></li>
+            <li><a href="http://uk.codejunkies.com/Departments/wii.aspx">Wii</a></li>
+        </ul>
+    
+    <p>If you were looking for something else then please use the links below to point you in the right direction:</p>
+    
+         <ul  id="Col">
+            <li><a href="http://uk.codejunkies.com">Homepage</a></li>
+            <li><a href="http://uk.codejunkies.com/support_request.aspx">Contact Us</a></li>
+        </ul>
+        
+        
+        <ul  id="ColR">
+            <li><a href="http://uk.codejunkies.com/Support">Techincal Support</a></li>
+            <li><a href="http://www.datel.co.uk">Datel Corporate Homepage</a></li>
+        </ul>   
+</div>
+
+
+
+</body>
+</html>
